@@ -1,4 +1,4 @@
-## Welcome to Chloe's Pages
+# Welcome to Chloe's Pages
 
 ## About Me
 TBA
