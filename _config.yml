@@ -1,3 +1,6 @@
 theme: jekyll-theme-leap-day
-github:
-  is_project_page: false
+
+# Disabling the "View on GitHub" button
+is_project_page: false
+
+title: false
