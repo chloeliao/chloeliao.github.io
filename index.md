@@ -6,4 +6,5 @@
 TBA
 
 ### Onoing notes
-- [Notes to Android Architecture](https://chloeliao.github.io/android-achitecture/).
+- [Quick Guide for Git](https://chloeliao.github.io/quick-guide-for-git/)
+[//]: # (- [Android Architecture](https://chloeliao.github.io/android-achitecture/).)
