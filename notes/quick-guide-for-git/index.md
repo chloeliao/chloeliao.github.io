@@ -92,6 +92,6 @@ $ git remote set-url origin https://github.com/user/repo.git # change the url of
 <br/>
 
 ## Reference
-- [GitHub Docs](https://docs.github.com/en).
-- [Learn Git with Bitbucket Cloud](https://www.atlassian.com/git/tutorials/learn-git-with-bitbucket-cloud).
-- [Git unstage](https://www.datree.io/resources/git-unstage).
+- [GitHub Docs](https://docs.github.com/en)
+- [Learn Git with Bitbucket Cloud](https://www.atlassian.com/git/tutorials/learn-git-with-bitbucket-cloud)
+- [Git unstage](https://www.datree.io/resources/git-unstage)
