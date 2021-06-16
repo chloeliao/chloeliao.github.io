@@ -13,7 +13,13 @@ $ git config --global user.email <user email address>
 
 #### Create a new repository
 To create a new repository for an existing code base, type `git init` in Git Bash.
-<br/><br/>
+```console
+$ git init
+$ git add .
+$ git commit -m 'initial commit'
+$ git remote add origin https://github.com/user/repo.git  # link to a new Git remote
+```
+<br/>
 
 
 #### Clone a repository
@@ -66,12 +72,18 @@ Use `git config --get-regexp alias` to list all aliases.
 ```console
 $ git rm --cached <filePath>  
 $ git reset <filePath>
-$ git restore --staged
+$ git restore --staged <filePath>
 ```
+<br/>
 
+#### Link to the remote repository
+```console
+$ git remote add origin https://github.com/user/repo.git  # link to a new Git remote
+$ git remote set-url origin https://github.com/user/repo.git # change the url of the remote repository
+```
+<br/>
 
 ## Reference
-
-
-[Learn Git with Bitbucket Cloud](https://www.atlassian.com/git/tutorials/learn-git-with-bitbucket-cloud).
-[Git unstage][https://www.datree.io/resources/git-unstage]
+- [GitHub Docs](https://docs.github.com/en).
+- [Learn Git with Bitbucket Cloud](https://www.atlassian.com/git/tutorials/learn-git-with-bitbucket-cloud).
+- [Git unstage](https://www.datree.io/resources/git-unstage).
