@@ -70,9 +70,17 @@ Use `git config --get-regexp alias` to list all aliases.
 
 #### Unstage a file in Git
 ```console
-$ git rm --cached <filePath>  
+$ git rm --cached <filePath>
 $ git reset <filePath>
 $ git restore --staged <filePath>
+```
+<br/>
+
+#### Untrack files added based on .gitignore
+```console
+$ git rm -r --cached .
+$ git add .
+$ git commit -m 'update .gitignore'
 ```
 <br/>
 
