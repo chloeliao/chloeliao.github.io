@@ -1,6 +1,6 @@
 # Quick Guide for Git
 
-### Useful Command
+## Beginner
 
 #### Set up the user info
 The first thing to do is to set up user’s information. When the local repository is pushed to the server, every user knows who sent that commit and pushed it to the remote repository.
@@ -9,26 +9,69 @@ The first thing to do is to set up user’s information. When the local reposito
 $ git config --global user.name <user name>
 $ git config --global user.email <user email address>
 ```
+<br/>
+
+#### Create a new repository
+To create a new repository for an existing code base, type `git init` in Git Bash.
+<br/><br/>
+
 
 #### Clone a repository
-It is common to start a project by cloning an existing repository from the server to the local system. To clone the repository, type the `$ git clone <repo>` in git bash and the repository will be copied to the current local directory.
+To start a project by cloning an existing repository from the server to the local system, type `git clone <repo>`. Then, the repository will be copied to the current local directory.
+<br/><br/>
 
 
 #### Update the local repository from the server
-Before adding a commit to git, it's better to update the local repository first by `$ git pull --rebase origin`.
+Before adding a commit to Git, it's better to update the local repository first by `git pull --rebase origin`.
+<br/><br/>
 
+#### Check the status of the repository
+Type `git status` to see the current status of the local repository.
+Type `git log` to see the entire commit history in the local repository.
+<br/><br/>
 
 #### Saving changes
-After editing files, user can make these edited/new added/deleted files to the staging area so these files are ready to be committed. The files on the staging area will be committed at the same time so be careful.
+After editing files, users can make these edited/new added/deleted files to the staging area so these files are ready to be committed. The files on the staging area will be committed at the same time so be careful.
 
 ```console
-$ git add <file name>  # for adding specific edited/new added file to staging area
-$ git rm <file name>  # for adding specific deleted file to staging area
-$ git add -A   # for adding all edited/new added/deleted files to staging area
+$ git add <file name>  # add specific edited/new added file to staging area
+$ git rm <file name>  # add specific deleted file to staging area
+$ git add -A   # add all edited/new added/deleted files to staging area
+```
+<br/>
+
+#### Commit
+Using `git commit -m <message>` to take a snapshot of files on the staging area. With –m, users can add a message describing what modifications are done.
+<br/><br/>
+
+#### Update changes to server
+Use `git push` to upload the local repository to a remote repository.
+<br/><br/>
+
+
+## Advanced Tips
+#### A better Git log
+Here is a more readable way to browse commit history.
+```console
+$ git config --global alias.lg = "log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --all"
+$ git lg
+```
+<br/>
+
+#### List Git aliases
+Use `git config --get-regexp alias` to list all aliases.
+<br/><br/>
+
+#### Unstage a file in Git
+```console
+$ git rm --cached <filePath>  
+$ git reset <filePath>
+$ git restore --staged
 ```
 
 
-### Reference
+## Reference
 
 
 [Learn Git with Bitbucket Cloud](https://www.atlassian.com/git/tutorials/learn-git-with-bitbucket-cloud).
+[Git unstage][https://www.datree.io/resources/git-unstage]
