@@ -95,3 +95,5 @@ $ git remote set-url origin https://github.com/user/repo.git # change the url of
 - [GitHub Docs](https://docs.github.com/en)
 - [Learn Git with Bitbucket Cloud](https://www.atlassian.com/git/tutorials/learn-git-with-bitbucket-cloud)
 - [Git unstage](https://www.datree.io/resources/git-unstage)
+- [A better Git log](https://coderwall.com/p/euwpig/a-better-git-log)
+
