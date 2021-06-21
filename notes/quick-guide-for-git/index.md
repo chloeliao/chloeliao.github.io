@@ -59,7 +59,7 @@ Use `git push` to upload the local repository to a remote repository.
 #### A better Git log
 Here is a more readable way to browse commit history.
 ```console
-$ git config --global alias.lg = "log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --all"
+$ git config --global alias.lg "log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --all"
 $ git lg
 ```
 <br/>
