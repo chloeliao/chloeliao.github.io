@@ -56,6 +56,9 @@ Use `git push` to upload the local repository to a remote repository.
 
 
 ## Advanced Tips
+
+
+
 #### A better Git log
 Here is a more readable way to browse commit history.
 ```console
