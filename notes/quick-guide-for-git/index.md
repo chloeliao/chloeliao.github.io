@@ -64,6 +64,12 @@ $ git lg
 ```
 <br/>
 
+
+```console
+$ git config --global alias.lg1 'log --graph --pretty="%C(yellow) Hash: %h %C(blue)Date: %ad %C(red) Message: %s " --date=human'
+$ git lg
+```
+<br/>
 #### List Git aliases
 Use `git config --get-regexp alias` to list all aliases.
 <br/><br/>
